@@ -1,0 +1,167 @@
+h1,h3 {
+    font-family:Arial,Helvetica,sans-serif;
+    font-size: 18px;
+    color: rgb(131,29,142)
+}
+    
+h2 {
+    font-family:Arial,Helvetica,sans-serif;
+    font-size: 18px;
+    color: rgb(131,29,142);
+    text-align: center;
+    width: 100%;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 4vw;
+
+    background-color: rgb(131,29,142);
+    font-family:Arial,Helvetica,sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white
+}
+
+.nav-links {
+    text-decoration: none;
+    display: flex;
+    column-gap: 2em;
+    font-size: 18px;
+    color: rgb(131,29,142);
+    padding: 2vh;
+}
+
+.nav-links li:hover {
+    background-color: rgb(230, 0, 255);
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+    
+.nav-links li {
+    text-decoration: none;
+    padding: 5px;
+    color: rgb(131,29,142);
+    background-color: transparent;
+}
+  
+.main-text {
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.6); 
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position:relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    z-index: 2;
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+}
+
+.tbl_btn {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius:20px;
+    top: 50px;
+}
+
+.tbl_btn:hover {
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.popup{
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 1); 
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+    transform: translate(-50%, -50%) scale(0.1);
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+th, td {
+    padding: 20px;
+}
+
+
+.search-bar{
+    width: 100%;
+    max-width: 700px;
+    background: rgba(0,0,0, 0.6);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 1% 30px;
+}
+
+.search-bar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px, 20px;
+    font-size: 20px;
+    color: #f1f1f1;
+}
+
+.search-bar button img{
+    width: 25px;
+}
+
+.search-bar button{
+    border: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background: rgba(white, 0.6);
+}
+
+.search-bar button:hover{
+    filter: brightness(80%);
+}
+
+body::before {
+    background: black;
+    content: '';
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/aston-uni-skyline.jpg);
+    background-size: cover;
+    z-index: -1; /* added */;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+  }
+
